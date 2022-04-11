@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gotham"
+                android:text="황금 "
+                android:textColor="#000000"
+                android:textSize="32sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gotham"
+                android:text="사과"
+                android:textColor="#000000"
+                android:textSize="32sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="2dp"
+                android:background="#deff00" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/calibri"
+        android:gravity="center"
+        android:text="Golden Apple"
+        android:textColor="#000000"
+        android:textSize="10sp"
+        tools:ignore="SmallSp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="592dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#96ffffff"
+            android:theme="@style/EditScreenTextInputLayoutStyle">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:drawableEnd="@drawable/ic_name"
+                android:drawablePadding="16dp"
+                android:fontFamily="@font/calibri"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:text="이름"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#96ffffff"
+            android:theme="@style/EditScreenTextInputLayoutStyle">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:drawableEnd="@drawable/ic_name"
+                android:drawablePadding="16dp"
+                android:fontFamily="@font/calibri"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:text="닉네임"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#96ffffff"
+            android:theme="@style/EditScreenTextInputLayoutStyle">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:drawableEnd="@drawable/ic_lock_white_24dp"
+                android:drawablePadding="16dp"
+                android:fontFamily="@font/calibri"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:text="E-mail"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#96ffffff"
+            android:theme="@style/EditScreenTextInputLayoutStyle">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:drawableEnd="@drawable/ic_lock_white_24dp"
+                android:drawablePadding="16dp"
+                android:fontFamily="@font/calibri"
+                android:inputType="numberPassword"
+                android:maxLines="1"
+                android:text="비밀번호"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#96ffffff"
+        android:theme="@style/EditScreenTextInputLayoutStyle">
+
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:drawablePadding="16dp"
+            android:fontFamily="@font/calibri"
+            android:maxLines="1"
+            android:text="회원가입"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
