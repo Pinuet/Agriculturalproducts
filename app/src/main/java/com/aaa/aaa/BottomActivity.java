@@ -1,20 +1,17 @@
+/**프래그먼트를 담당하는 액티비티**/
 package com.aaa.aaa;
+
+import android.os.Bundle;
+import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.viewpager.widget.ViewPager;
-
-import android.os.Bundle;
-import android.util.Log;
-import android.view.MenuItem;
-import android.widget.Button;
-import android.widget.ImageView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.tabs.TabLayout;
+
 
 public class BottomActivity extends AppCompatActivity {
 
@@ -93,7 +90,7 @@ public class BottomActivity extends AppCompatActivity {
         }
 
     }
-
+    //액션바 타이틀 설정
     public void setActionBarTitle(String title) {
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {

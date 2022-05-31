@@ -9,8 +9,20 @@
     android:background="#00040404"
     android:orientation="vertical">
 
+    <androidx.viewpager.widget.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/categoryViewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </androidx.viewpager.widget.ViewPager>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton3"
+        android:id="@+id/writeButton"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_alignParentRight="true"
@@ -18,7 +30,9 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
         android:clickable="true"
-        app:backgroundTint="#FF2F9E"
+        app:backgroundTint="@android:color/holo_green_light"
         app:rippleColor="#00FFFFFF"
-        app:srcCompat="@drawable/write_circle" />
+        app:srcCompat="@drawable/pen_icon" />
+
+
 </RelativeLayout>
